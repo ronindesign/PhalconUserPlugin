@@ -292,3 +292,12 @@ ALTER TABLE `user_reset_passwords`
 --
 ALTER TABLE `user_success_logins`
   ADD CONSTRAINT `user_success_logins_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+-- --------------------------------------------------------
+
+--
+-- Insert default, active user group for table `user_groups`
+--
+
+INSERT INTO `user_groups` (`id`, `name`, `active`)
+VALUES (0, 'default', 1); -- Assuming empty table `user_groups`

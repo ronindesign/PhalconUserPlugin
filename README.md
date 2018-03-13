@@ -44,13 +44,18 @@ The recommended installation is via Composer. Just add the following line to you
 ```json
 {
     "require": {
-        "crada/phalcon-user-plugin": "~2.0"
+        "crada/phalcon-user-plugin": "^3.0"
     }
 }
 ```
 
 ```bash
 $ php composer.phar update
+```
+OR simply execute
+
+```bash
+$ composer require crada/phalcon-user-plugin:^3.0
 ```
 
 ### <a id="plug-it"></a>Plug it
